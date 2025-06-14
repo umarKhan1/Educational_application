@@ -1,16 +1,31 @@
-# test
+# 📚 Educational Learning App (In Progress)
 
-A new Flutter project.
+This is a Flutter-based mobile application focused on providing an interactive educational experience for learners. The app is currently under development.
 
-## Getting Started
+---
 
-This project is a starting point for a Flutter application.
+## 🚧 Status: In Development 🛠️
 
-A few resources to get you started if this is your first Flutter project:
+> Core structure is being built — UI screens, state management, and navigation are currently in progress.
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+---
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## 🎯 Planned Features
+
+- 📖 Interactive lessons & modules
+- 📝 Quizzes and knowledge checks
+- 📊 User progress tracking
+- 🔔 Push notifications for learning streaks
+- 🌙 Light/Dark mode support
+- 🔍 Search and filter for topics
+
+---
+
+## 🛠️ Tech Stack
+
+- **Flutter** & **Dart**
+- **Cubit** (state management)
+- **ScreenUtil** (responsive UI)
+- **Firebase** (planned for backend & auth)
+
+
