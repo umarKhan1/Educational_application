@@ -55,6 +55,38 @@ class AppTheme {
     
     
       ),
+    textTheme: TextTheme(
+  displayLarge: TextStyle(
+    fontSize: 32.sp,
+    fontWeight: FontWeight.bold,
+    color: textColor,
+  ),
+  displayMedium: TextStyle(
+    fontSize: 24.sp,
+    fontWeight: FontWeight.bold,
+    color: textColor,
+  ),
+  headlineSmall: TextStyle(
+    fontSize: 22.sp,
+    fontWeight: FontWeight.w600,
+    color: textColor,
+  ),
+  bodyLarge: TextStyle(
+    fontSize: 17.sp,
+    fontWeight: FontWeight.normal,
+    color: textColor,
+  ),
+  bodyMedium: TextStyle(
+    fontSize: 14.sp,
+    color: Colors.black87,
+  ),
+  labelLarge: TextStyle(
+    fontSize: 12.sp,
+    fontWeight: FontWeight.w500,
+    color: primaryColor,
+  ),
+),
+
       buttonTheme: const ButtonThemeData(
         buttonColor: primaryColor,
         textTheme: ButtonTextTheme.primary,
@@ -77,7 +109,32 @@ class AppTheme {
       splashColor: Colors.transparent,
       splashFactory: NoSplash.splashFactory,
        
-         
+        textTheme: TextTheme(
+  displayLarge: TextStyle(
+    fontSize: 32.sp,
+    fontWeight: FontWeight.bold,
+    color: Colors.white,
+  ),
+  headlineSmall: TextStyle(
+    fontSize: 20.sp,
+    fontWeight: FontWeight.w600,
+    color: Colors.white,
+  ),
+  bodyLarge: TextStyle(
+    fontSize: 16.sp,
+    fontWeight: FontWeight.normal,
+    color: Colors.white70,
+  ),
+  bodyMedium: TextStyle(
+    fontSize: 14.sp,
+    color: Colors.white60,
+  ),
+  labelLarge: TextStyle(
+    fontSize: 12.sp,
+    fontWeight: FontWeight.w500,
+    color: secondaryColor,
+  ),
+), 
       appBarTheme: AppBarTheme(
         backgroundColor: Colors.black,
         iconTheme: iconTheme.copyWith(color: Colors.white),

@@ -2,7 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:test/logic/book_cubit/book_cubit.dart';
+import 'package:test/logic/onboarding_cubit.dart';
 import 'package:test/logic/splash_cubit.dart';
+import 'package:test/logic/verfication_cubit/verfication_cubit.dart';
 import 'package:test/model/book_model.dart';
 
 import 'package:test/presentation/splash_view.dart';
@@ -24,6 +26,10 @@ class MyApp extends StatelessWidget {
       providers: [
         BlocProvider(create: (context) => BookSearchCubit(BookModel.books)),
         BlocProvider(create: (context) => SplashCubit()),
+        BlocProvider(create: (context) => OnboardingCubit()),
+        BlocProvider(
+          create: (context) => VerificationCubit(),
+        ),
       ],
       child: ScreenUtilInit(
         designSize: const Size(375, 812),
