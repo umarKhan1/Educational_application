@@ -13,10 +13,3 @@ class SplashCubit extends Cubit<bool> {
     emit(true);
   }
 }
-class BottomNavCubit extends Cubit<int> {
-  BottomNavCubit() : super(0);
-
-  void changePage(int index) {
-    emit(index); // Update the current index
-  }
-}

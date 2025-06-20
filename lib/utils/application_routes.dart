@@ -4,6 +4,8 @@ import 'package:test/presentation/auth_view/forgot_password.dart';
 import 'package:test/presentation/auth_view/login_view.dart';
 import 'package:test/presentation/auth_view/reset_password.dart';
 import 'package:test/presentation/auth_view/signup_view.dart';
+import 'package:test/presentation/bottom_nav_view.dart';
+import 'package:test/presentation/home_view/home_view.dart';
 import 'package:test/presentation/onboarding_view/onboarding_view.dart';
 import 'package:test/presentation/splash_view.dart';
 
@@ -15,6 +17,8 @@ class ApplicationRoutes {
   static const String resetPassword = '/resetPassword';
   static const String signupView = '/signupView';
   static const String emailVerificationView = '/emailVerificationView';
+  static const String homeView = '/homeView';
+  static const String bottomNavigationView = '/bottomNavigationView';
   static Route<dynamic> generateRoute(RouteSettings settings) {
     switch (settings.name) {
       case splash:
@@ -28,7 +32,7 @@ class ApplicationRoutes {
       case forgotpassword:
         return MaterialPageRoute(builder: (_) => ForgotPassword());
       case resetPassword:
-        return MaterialPageRoute(builder: (_) => ResetPassword());
+        return MaterialPageRoute(builder: (_) => ResetPassword(oldpassword: settings.arguments! as String,));
       case signupView:
         return MaterialPageRoute(builder: (_) => SignupView());
 
@@ -38,7 +42,12 @@ class ApplicationRoutes {
             email: settings.arguments! as Map<String, dynamic>,
           ),
         );
-
+      case homeView:
+        return MaterialPageRoute(builder: (_) => const HomeScreenView());
+      case bottomNavigationView:
+        return MaterialPageRoute(
+          builder: (_) => const BottomNavigationView(),
+        );
       default:
         return MaterialPageRoute(
           builder: (_) => Scaffold(

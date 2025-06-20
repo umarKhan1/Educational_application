@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "599690446262",
+    "project_id": "education-cbdbc",
+    "storage_bucket": "education-cbdbc.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:599690446262:android:bed43418aa1ec271d7ad17",
+        "android_client_info": {
+          "package_name": "com.example.test"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAMZrP2O_HZE95pGhu2yZy0rHo-JMRuRXE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -48,4 +48,13 @@ static const createAnAccount = 'Create An Account';
  static const verify = 'Verify';
  static const didnotgetyourCode = "Didn't get your code? ";
  static const emailVerificationSuccess = 'Email verification successful';
+static const helloText='Hello, Muhammad Omar';
+static const whatYouWantToLearn = 'What do you want to learn today?';
+static const newCourses = 'New Courses';
+static const userExperienceClass = 'User Experience Class';
+static const viewNow = 'View Now';
+static const course = 'Course';
+static const viewAll = 'View All';
+
+
 }
